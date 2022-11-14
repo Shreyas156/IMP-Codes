@@ -1,0 +1,98 @@
+html {
+  background-color: #001691;
+}
+.userCardContainer {
+  display: flex;
+  flex-direction:row ;
+  
+  
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userCard {
+  background-color:#cbe6f7;
+  margin: 20px 100px 20px 100px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 #cbe6f7, 0 6px 20px 0 #cbe6f7;
+}
+
+.userCard:hover {
+  transition: all 300ms ease;
+  transform: scale(1.05);
+}
+
+.userCard img {
+  border-radius: 50%;
+}
+
+.name {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.email {
+  padding: 15px;
+  font-size: 18px;
+}
+
+button {
+  text-align: center;
+  border: none;
+  background-color: #cbe6f7;
+  box-sizing: border-box;
+  width: auto;
+  height: 70px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: all 300ms ease;
+  transform: scale(1.05);
+}
+
+.buttonContainer {
+  background-color: #001691;
+  padding: 10px 10px 10px 10px;
+  text-align: right;
+}
+
+.title{
+    color: #cbe6f7;
+    margin: 0;
+    font-size: 40px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid #cbe6f7;
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: hsl(180, 33%, 96%);
+    height: 40%;
+    width: 575px;
+    margin: auto;
+    top: 55%;
+    left: 0;
+    right: 0;
+    padding: 35px 0;
+    border-radius:7px;
+
+}
+
+#newtask{
+     position: relative;
+     padding: 35px 20px;
+     background-color: rgb(225, 228, 44);
+     border-radius: 6px;
+     box-shadow: rgb(130, 0, 139);
+ 
+}
+
+#newtask input{
+     border-radius: 6px;
+     width: 68%;
+     height: 48px;
+     font-size: 18px;
+     border:darkred;
+     padding: 14px;
+     color: darksalmon;
+     font-weight: 450;
+     position: relative;
+}
+
+#newtask input:focus{
+
+    outline: dashed;
+    border-color: indigo;
+
+}
+
+#newtask button{
+
+    position: relative;
+    float: right;
+    width: 65px;
+    height: 47px;
+    border-radius:4px;
+    font-weight: 550;
+    font-size: 18px;
+    background: rgb(174, 0, 255);
+    color: rgb(0, 88, 139);
+    border: #b80b6a;
+    outline: thistle;
+    cursor:pointer;
+} 
+
+#task{
+    width: 120%;
+    position:relative;
+    margin-top: 42px;
+    background: salmon;
+    padding: 28px 22px;
+    border-radius: 4px;
+}
+    
+.task{
+    background: aqua;
+    height: 53px;
+    padding: 7px 12px;
+    border-radius: 0px;
+    margin-top: 12px;
+    display: flexbox;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+    border-bottom: darkmagenta;
+}   
+.delete{
+    float:right;
+
+} 
+.task span{
+     font-size: 18px;
+     font-weight: 430;
+     cursor: pointer;
+
+}
+
+.task button{
+    border:darkred;
+    background: darkturquoise;
+    height: 110%;
+    width: 68px;
+    color: forestgreen;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.completed{
+    text-decoration: magenta;
+    opacity: 0.8;
+}

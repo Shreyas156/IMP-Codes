@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST </title>
+    <link rel="stylesheet" href="TODO.css">
+</head>
+<body>
+   <h1 style="color:red;">************TODO LIST***********</h1>
+   <p><br></p>
+   <p><br></p>
+   <div class="container">
+       <div id="newtask">
+           <input type="text" placeholder="Enter Task">
+           <button id="push">Add</button>
+      </div>
+      <div id="tasks"></div>
+  </div>
+
+  <script>
+
+      document.querySelector('#push').onclick = 
+      function() {
+
+          if(document.querySelector('#newtask input').
+          value.length == 0){
+              alert("Please Enter a Task");
+          }
+          else{
+              document.querySelector('#tasks').innerHTML
+            += `<div class="task"> <span id="taskname"> ${document.querySelector("#newtask input").value}</span><button class="delete">X</button></div>`
+
+            var current_tasks = document.querySelectorAll('.delete');
+
+            for(var i=0; i<current_tasks.length; i++){
+                current_tasks[i].onclick =function(){
+                    this.parentNode.remove();
+                }
+            }
+
+            var tasks = document.querySelectorAll('#taskname');
+
+        for(var i=0; i<tasks.length; i++){
+            tasks[i].onclick=function(){
+                this.classList.toggle('completed');
+            }
+        }
+
+        document.querySelector('#newtask input').value ="";
+
+        }
+
+     }
+  </script>
+</body>
+</html>
